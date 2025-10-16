@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Учет расходов</string>
+    <string name="welcome">Добро пожаловать!</string>
+    <string name="welcome_name">С возвращением, имя!</string>
+    <string name="name_hint">Введите имя</string>
+    <string name="password_hint">Введите пароль</string>
+    <string name="enter">Вход</string>
+    <string name="registration">Регистрация</string>
+    <string name="enter_expense">Введите название расхода</string>
+    <string name="enter_sum">Введите сумму расхода</string>
+    <string name="sum">Сумма</string>
+    <string name="expense">Расход</string>
+    <string name="add_expense">Добавить расход</string>
+    <string name="check_expenses">Посмотреть все расходы</string>
+</resources>
