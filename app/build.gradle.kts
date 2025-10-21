@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.example.yakovleva_pr21_v5"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.example.yakovleva_pr21_v5"
         minSdk = 24
-        targetSdk = 35
+        targetSdk = 36
         versionCode = 1
         versionName = "1.0"
 
@@ -33,10 +33,18 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+    packaging {
+        resources {
+            excludes += "/META-INF/{AL2.0,LGPL2.1}"
+            excludes += "/META-INF/versions/9/OSGI-INF/MANIFEST.MF"
+            excludes += "META-INF/versions/9/OSGI-INF/MANIFEST.MF"
+        }
+    }
 }
 
 dependencies {
 
+    implementation("com.google.android.material:material:1.13.0")
     implementation ("com.google.code.gson:gson:2.8.5")
     implementation(libs.androidx.appcompat)
     implementation(libs.material)

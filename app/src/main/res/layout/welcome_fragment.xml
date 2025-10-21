@@ -51,9 +51,13 @@
             android:textColorHint="@color/sky_blue"/>
 
         <Button
-            android:id="@+id/enter_btn"
-            android:layout_width="170dp"
-            android:layout_height="50dp"
+            android:id="@+id/login_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="50dp"
+            android:paddingLeft="50dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/button_cta"
             android:text="@string/enter"
@@ -66,8 +70,12 @@
 
         <Button
             android:id="@+id/registration_btn"
-            android:layout_width="170dp"
-            android:layout_height="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="40dp"
+            android:paddingLeft="40dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/button"
             android:text="@string/registration"
