@@ -49,6 +49,8 @@ class WelcomeFragment: Fragment() {
     override fun onStart() {
         super.onStart()
 
+        autoFill()
+
         //обработчик нажатия кнопки регистрация
         registration.setOnClickListener{
             val username = name.text.toString()
@@ -98,12 +100,23 @@ class WelcomeFragment: Fragment() {
         }
     }
 
+    //заполнение сохраненными данными эдиттекстов
+    private fun autoFill(){
+        val userJson = prefs.getString("user", null)
+
+        if (userJson != null){
+            val savedUser = gson.fromJson(userJson, User::class.java)
+            name.setText(savedUser.username)
+            password.setText(savedUser.password)
+        }
+    }
+
     //показ снекбара
     private fun showSnackBar(view:View, message: String) {
         val snackbar = Snackbar.make(view, message, Snackbar.LENGTH_LONG)
         val snackbarView = snackbar.view
-        snackbarView.setBackgroundColor(ContextCompat.getColor(requireContext(), R.color.sky_blue))
-        snackbar.setTextColor(ContextCompat.getColor(requireContext(), R.color.cream))
+        snackbarView.setBackgroundColor(ContextCompat.getColor(requireContext(), R.color.cream))
+        snackbar.setTextColor(ContextCompat.getColor(requireContext(), R.color.sky_blue))
         snackbar.show()
     }
 }

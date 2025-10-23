@@ -12,4 +12,6 @@
     <string name="expense">Расход</string>
     <string name="add_expense">Добавить расход</string>
     <string name="check_expenses">Посмотреть все расходы</string>
+    <string name="expenses">Мои расходы</string>
+    <string name="back">Назад</string>
 </resources>

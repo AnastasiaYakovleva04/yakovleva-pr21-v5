@@ -50,9 +50,12 @@
         android:background="@drawable/input"
         android:padding="10dp"
         android:inputType="number"
+        android:digits="0123456789."
+        android:maxLength="10"
         android:layout_marginTop="10dp"
         android:textColorHint="@color/sky_blue"/>
     <Button
+        android:id="@+id/addBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
@@ -62,6 +65,7 @@
         android:textColor="@color/cream"
         android:background="@drawable/button"/>
     <Button
+        android:id="@+id/checkAllBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
